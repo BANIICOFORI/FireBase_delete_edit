@@ -2,9 +2,10 @@ import { Container, Row } from "react-bootstrap";
 import User from "./User";
 import {useSelector } from "react-redux";
 
+
 function Allusers(props) {
 	const { users } = useSelector((state) => {
-		return state;
+		return state.usersReducer;
 });
 
 	return (
